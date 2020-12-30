@@ -1,15 +1,386 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edfe8d6d-dbda-4140-895e-ee6ab611504b" name="Default Changelist" comment="" />
+    <list default="true" id="edfe8d6d-dbda-4140-895e-ee6ab611504b" name="Default Changelist" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/css/flag-icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/css/flag-icon.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ae.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/af.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ai.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/al.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/am.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/aq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/as.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/at.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/au.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/aw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ax.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/az.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ba.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/be.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/br.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/by.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/bz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ca.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ci.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/co.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/cz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/de.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/dj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/dk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/dm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/do.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/dz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ec.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ee.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/eg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/eh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/er.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/es.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/et.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/eu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/fi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/fj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/fk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/fm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/fo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/fr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ga.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/gy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/hk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/hm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/hn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/hr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ht.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/hu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/id.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/il.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/im.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/io.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/iq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ir.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/is.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/it.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/je.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/jm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/jo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/jp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/ke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/flags/1x1/kg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/sass/flag-icon-base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/sass/flag-icon-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/sass/flag-icon-more.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/sass/flag-icon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/fonts/flag-icon-css/sass/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/backgrounds/app-chat-bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/banner-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/banner/parallax-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/amer-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/discover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/face-regular-24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/finance.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/cards/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/dropzone/spritemap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/dropzone/spritemap@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/amazon-speaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/apple-lap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/apple-watch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/beats-headphones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/decore-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/decore-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/homepod.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/ipad-pro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/iphone-x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/jbl-speaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/macbook-pro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/elements/magic-mouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/flags/de.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/flags/en.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/flags/fr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/flags/pt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/ico/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/cup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/doc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/fs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/nike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/one-plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/psd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/puma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/sketch-mac-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/icon/sketch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/logo/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/logo/frest-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/logo/logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/1-apex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/2-stack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/3-convex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/4-materialize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/500.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/PayPal_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/arrow-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/auth-bg-dark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/auth-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/carousel/login1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/carousel/logout.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/carousel/register.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/carousel/user.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/comingsoon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/content-img-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/content-img-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/content-img-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/content-img-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/faq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/forgot-password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/google-pay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/kb-article.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/knowledge-base-cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/lock-screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/login/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/login/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/login/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/login/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/maintenance-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/maintenance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/modern-thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/modern.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/not-authorized.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/pixinvent-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/pixinvent-logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/pixinvent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/register.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/reset-password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/rocket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/search-result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/video-poster.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/vuesax-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/pages/vuesax-login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/portrait/small/avatar-s-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/birthday.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/page-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/pages/pixinvent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/portraits/avatar-portrait-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/portraits/avatar-portrait-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/portraits/avatar-portrait-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/portraits/avatar-portrait-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/portraits/avatar-portrait-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/post-media/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/post-media/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/post-media/profile-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/girl-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/social-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/social.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/profile/user-uploads/user-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/raty/star-half-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/raty/star-on-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/apex.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/materialize.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/modern.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/stack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/slider/vuesax.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/svg/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -123,23 +494,47 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mK9uyBAo574uXqCDkTz83UohNh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/admin/fonts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\multymodal\public\admin\fonts" />
+      <recent name="C:\OSPanel\domains\multymodal\public\admin" />
+      <recent name="C:\OSPanel\domains\multymodal\public" />
+      <recent name="C:\OSPanel\domains\multymodal\public\assets\images" />
+      <recent name="C:\OSPanel\domains\multymodal\public\assets\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\multymodal\public\assets" />
+      <recent name="C:\OSPanel\domains\multymodal\public\admin\js" />
+      <recent name="C:\OSPanel\domains\multymodal\public\admin\css" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -148,11 +543,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609231641773</updated>
-      <workItem from="1609231644194" duration="304000" />
+      <workItem from="1609231644194" duration="11076000" />
+      <workItem from="1609251394333" duration="24034000" />
+      <workItem from="1609301114234" duration="4966000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit">
+      <created>1609305325064</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609305325064</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit">
+      <created>1609306643816</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609306643816</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
