@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: Roboto;
+    font-family: 'Roboto';
 }
 .header{
     height: 50px;
