@@ -93,17 +93,17 @@
                             <div class="swiper-slide swiper-slide2 text-white">
                                 <img src="/assets/images/person1.png" alt="Avatar" class="avatar">
                                 <p class="subheading ml-2">Арманов Асанали</p>
-                                <p class="subheading2 ml-2 d-block">Основатель</p>
+
                             </div>
                             <div class="swiper-slide swiper-slide2 text-white">
                                 <img src="/assets/images/person1.png" alt="Avatar" class="avatar">
                                 <p class="subheading ml-2">Арманов Асанали</p>
-                                <p class="subheading2 ml-2 d-block">Основатель</p>
+
                             </div>
                             <div class="swiper-slide swiper-slide2 text-white">
                                 <img src="/assets/images/person1.png" alt="Avatar" class="avatar">
                                 <p class="subheading ml-2">Арманов Асанали</p>
-                                <p class="subheading2 ml-2 d-block">Основатель</p>
+
                             </div>
 
 
