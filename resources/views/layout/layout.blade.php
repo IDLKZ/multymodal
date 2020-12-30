@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{isset($data["seo"]) ? ($data["seo"] ? $data["seo"]->description : "Первая мультимодальная компания") :"Первая мультимодальная компания"}}">
+    <meta name="keywords" content="{{isset($data["seo"]) ? ($data["seo"] ? $data["seo"]->keywords : "Первая мультимодальная компания") :"Первая мультимодальная компания"}}">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href={{asset("/assets/css/bootstrap.min.css")}}>
@@ -15,7 +17,7 @@
     <link rel="stylesheet" href="{{asset("/assets/css/mystyle.css")}}">
 
 
-    <title>{{isset($title) ? $title :"Первая мультимодальная компания"}}</title>
+    <title>{{isset($data["seo"]) ? ($data["seo"] ? $data["seo"]->title : "Первая мультимодальная компания") :"Первая мультимодальная компания"}}</title>
 
 
 </head>

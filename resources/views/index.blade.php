@@ -4,14 +4,25 @@
 @section("content")
     <section id="company">
     <div class="container-fluid pa-0 ma-0 overflow-hidden">
-        <div class="row pa-0 ma-0 fill-current parallax d-flex justify-content-center align-items-center" style="background-image:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('assets/images/bg1.png')">
+        <div class="row pa-0 ma-0 fill-current parallax d-flex justify-content-center align-items-center" style="
+        background-image:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url({{$data["parallax"] ? $data["parallax"]->img : 'assets/images/bg1.png' }})
+">
 
                     <div class="col-md-8 text-center text-white">
                         <h1 class="header1 text-uppercase">
+                            @if($data["headings"][1])
+                                {{$data["headings"][1]->title}}
+                            @else
                             Первая Мультимодальная Компания
+                            @endif
                         </h1>
                         <p class="subheading text-uppercase pt-2">
-                            Надежный оператор вагонов
+                            @if($data["headings"][1])
+                                {{$data["headings"][1]->subtitle}}
+                            @else
+                                Надежный оператор вагонов
+                            @endif
+
                         </p>
                         <a href="#contact" class="btn blue-btn py-3 px-3">
                             ОСТАВИТЬ ЗАЯВКУ
@@ -26,30 +37,78 @@
           <div class="row">
               <div class="col-md-12 text-center text-black">
                   <h2 class="header2 text-uppercase">
-                      Направления
+                      @if($data["headings"][2])
+                          {{$data["headings"][2]->title}}
+                      @else
+                          Направления
+                      @endif
                   </h2>
                   <p class="subheading2 text-uppercase pt-2">
-                      У нас есть удивительное предложение специализированных запчастей на продажу и в аренду.
-                      Мы также предлагаем аренду складских помещений и экспертные услуги для всех ваших строительных и
-                      промышленных нужд.
+                      @if($data["headings"][2])
+                          {{$data["headings"][2]->subtitle}}
+                      @else
+                          У нас есть удивительное предложение специализированных запчастей на продажу и в аренду.
+                          Мы также предлагаем аренду складских помещений и экспертные услуги для всех ваших строительных и
+                          промышленных нужд.
+                      @endif
+
                   </p>
               </div>
               <hr>
-              <div class="col-md-6 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
-                  <p class="heading4 text-uppercase">
-                      Экспедирование
-                  </p>
-                  <div class="card-image bg-white d-flex justify-content-center align-items-center direction-card" style="background-image:url('assets/images/img1.png')">
-                      <button class="btn btn-dark d-none">Подробнее</button>
+              @if($data["direction"]->isNotEmpty())
+                  @foreach($data["direction"] as $direction)
+                      <div class="col-md-6 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
+                          <p class="heading4 text-uppercase">
+                              {{$direction->title}}
+                          </p>
+                          <div class="flip-card">
+
+                              <div class="flip-card-inner">
+                                  <div class="flip-card-front bg" style="background-image:url({{$direction->img}})">
+                                  </div>
+                                  <div class="flip-card-back">
+                                      <p>{{$direction->description}}</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  @endforeach
+
+              @else
+                  <div class="col-md-6 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
+                      <p class="heading4 text-uppercase">
+                          Экспедирование
+                      </p>
+                      <div class="flip-card">
+
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front" style="background-image:url('assets/images/img1.png')">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>SOME TEXT</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-              </div>
-              <div class="col-md-6 text-center pa-sm-2 my-md-5 pa-md-5 my-2">
-                  <p class="heading4 text-uppercase">
-                      Оперирование вагонов
-                  </p>
-                  <div class="card-image bg-white" style="background-image:url('assets/images/img1.png')">
+                  <div class="col-md-6 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
+                      <p class="heading4 text-uppercase">
+                          Экспедирование
+                      </p>
+                      <div class="flip-card">
+
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front" style="background-image:url('assets/images/img1.png')">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>SOME TEXT</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-              </div>
+
+
+              @endif
               <div class="col-md-12 text-center text-black mt-2">
                   <p class="subheading2 text-uppercase pt-2 pb-5">
                       Вся наша продукция отличается высочайшим качеством и соответствует самым строгим отраслевым стандартам
@@ -81,15 +140,34 @@
             <div class="row">
                 <div class="col-md-12 text-center text-white">
                     <h2 class="header2 text-uppercase">
-                        Руководство
+                        @if($data["headings"][3])
+                            {{$data["headings"][3]->title}}
+                        @else
+                            Руководство
+                        @endif
                     </h2>
+                    <p class="subheading2 text-uppercase pt-2">
+                        @if($data["headings"][3])
+                            {{$data["headings"][3]->subtitle}}
+                        @else
+
+                        @endif
+
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 pr-0 d-none d-sm-block">
                     <div class="swiper-container2 overflow-hidden mt-5 mr-0 pr-0">
                         <div class="swiper-wrapper swiper-wrapper2">
-
+                            @if($data["managers"]->isNotEmpty())
+                                @foreach($data["managers"] as $manager)
+                                <div class="swiper-slide swiper-slide2 text-white">
+                                    <img src="{{$manager->img}}" alt="Avatar" class="avatar">
+                                    <p class="subheading ml-2">{{$manager->name}}</p>
+                                </div>
+                                @endforeach
+                            @else
                             <div class="swiper-slide swiper-slide2 text-white">
                                 <img src="/assets/images/person1.png" alt="Avatar" class="avatar">
                                 <p class="subheading ml-2">Арманов Асанали</p>
@@ -105,7 +183,7 @@
                                 <p class="subheading ml-2">Арманов Асанали</p>
 
                             </div>
-
+                            @endif
 
                         </div>
                         <!-- Add Pagination -->
@@ -117,6 +195,25 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
+                            @if($data["managers"]->isNotEmpty())
+                                @foreach($data["managers"] as $manager)
+                                    <div class="swiper-slide manager-card">
+                                        <div class="row">
+                                            <div class="col-md-5 text-center">
+                                                <img class="manager-card manager-image d-inline" src="{{$manager->img}}">
+                                            </div>
+                                            <div class="col-md-7 text-white py-4 ">
+                                                <h3>{{$manager->name}}</h3>
+                                                <h4>{{$manager->job}}</h4>
+                                                <p>
+                                                    {{$manager->description}}
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                @endforeach
+                            @else
                             <div class="swiper-slide manager-card">
                                 <div class="row">
                                     <div class="col-md-5 text-center">
@@ -183,9 +280,7 @@
                                 </div>
 
                             </div>
-
-
-
+                            @endif
                         </div>
                         <div class="swiper-pagination"></div>
                         <!-- If we need pagination -->
@@ -213,14 +308,36 @@
             <div class="row">
                 <div class="col-md-12 text-center text-black">
                     <h2 class="header2 text-uppercase">
-                        Партнеры
+                        @if($data["headings"][4])
+                            {{$data["headings"][4]->title}}
+                        @else
+                            Партнеры
+                        @endif
                     </h2>
+                    <p class="subheading2 text-uppercase pt-2">
+                        @if($data["headings"][4])
+                            {{$data["headings"][4]->subtitle}}
+                        @else
+
+                        @endif
+
+                    </p>
                 </div>
                 <div class="col-md-12 overflow-hidden">
                     <div class="swiper-container3 my-5">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
+                            @if($data["partners"]->isNotEmpty())
+                                @foreach($data["partners"] as $partner)
+                                <div class="swiper-slide">
+                                    <div class="row justify-content-center">
+                                        <img class="carousel" src="{{$partner->img}}">
+                                    </div>
+
+                                </div>
+                                @endforeach
+                            @else
                             <div class="swiper-slide">
                                 <div class="row justify-content-center">
                                         <img src="/assets/images/logo1.png">
@@ -239,6 +356,7 @@
                                 </div>
 
                             </div>
+                            @endif
 
 
                         </div>
@@ -261,11 +379,44 @@
             <div class="row">
                 <div class="col-md-12 text-center text-black">
                     <h2 class="header2 text-uppercase">
-                        Документы
+                        @if($data["headings"][5])
+                            {{$data["headings"][5]->title}}
+                        @else
+                            Документы
+                        @endif
                     </h2>
+                    <p class="subheading2 text-uppercase pt-2">
+                        @if($data["headings"][5])
+                            {{$data["headings"][5]->subtitle}}
+                        @else
+
+                        @endif
+
+                    </p>
                 </div>
             </div>
             <div class="row my-5">
+                @if($data["documents"]->isNotEmpty())
+                    @foreach($data["documents"] as $document)
+                    <div class="col-md-6 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <i class="{{$document->type}}"></i>
+                                    {{$document->title}}
+                                </h4>
+                                <hr>
+                                <p>
+                                    {{$document->description}}
+                                </p>
+                                <a href="{{$document->file}}" download class="card-link text-uppercase text-success">
+                                    <i class="fas fa-download"></i>
+                                    Скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                @else
                 <div class="col-md-6 mt-2">
                     <div class="card">
                         <div class="card-body">
@@ -304,6 +455,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
 
 
 
@@ -317,8 +469,20 @@
             <div class="row">
                 <div class="col-md-12 text-center text-white">
                     <h2 class="header2 text-uppercase">
-                        Напишите Нам
+                        @if($data["headings"][6])
+                            {{$data["headings"][6]->title}}
+                        @else
+                            Напишите Нам
+                        @endif
                     </h2>
+                    <p class="subheading2 text-uppercase pt-2">
+                        @if($data["headings"][6])
+                            {{$data["headings"][6]->subtitle}}
+                        @else
+
+                        @endif
+
+                    </p>
                 </div>
             </div>
             <form>
@@ -373,24 +537,50 @@
                 <div class="col-md-3 pa-5 text-center contact br">
                     <i class="fas fa-map-marker-alt contact-icon"></i>
                     <p class="subheading text-uppercase mt-2">Наш Адрес</p>
+                    @if($data["address"]->isNotEmpty())
+                        @foreach($data["address"] as $address)
+                        <p>{{$address->title}}</p>
+                        @endforeach
+                    @else
                     <p>Lorem ipsum dolor
                         sit amet</p>
+                        @endif
                 </div>
                 <div class="col-md-3 pa-5 text-center contact br">
                     <i class="fas fa-phone contact-icon"></i>
                     <p class="subheading text-uppercase mt-2">Контакты</p>
-                    <p>+7 777 777 77 77</p>
+                    @if($data["phone"]->isNotEmpty())
+                        @foreach($data["phone"] as $phone)
+                            <p>{{$phone->phone}}</p>
+                        @endforeach
+                    @else
+                        <p>+7 777 777 77 77</p>
+                    @endif
+
                 </div>
                 <div class="col-md-3 pa-5 text-center contact br">
                     <i class="fas fa-clock contact-icon"></i>
                     <p class="subheading text-uppercase mt-2">Часы работы</p>
-                    <p>ПН-ПТ 09:00 - 18:30</p>
-                    <p> СБ-ВС 09:00 - 15:30</p>
+                    @if($data["time"]->isNotEmpty())
+                        @foreach($data["time"] as $time)
+                            <p>{{$time->time}}</p>
+                        @endforeach
+                    @else
+                        <p>ПН-ПТ 09:00 - 18:30</p>
+                        <p>СБ-ВС 09:00 - 15:30</p>
+                    @endif
                 </div>
                 <div class="col-md-3 pa-5 text-center contact">
                     <i class="fas fa-envelope contact-icon"></i>
                     <p class="subheading text-uppercase mt-2">Почта</p>
-                    <p>salem@pmk.kz</p>
+                    @if($data["email"]->isNotEmpty())
+                        @foreach($data["email"] as $email)
+                            <p>{{$email->email}}</p>
+                        @endforeach
+                    @else
+                        <p>salem@pmk.kz</p>
+                    @endif
+
                 </div>
             </div>
         </div>

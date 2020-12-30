@@ -33,3 +33,9 @@ var swiper3 = new Swiper('.swiper-container3', {
     },
 
 });
+$(document).ready(function () {
+    $(".direction-card").on("mouseover",function (){
+       $(this).css("box-shadow",10)
+    })
+
+})
