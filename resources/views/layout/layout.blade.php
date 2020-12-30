@@ -50,7 +50,7 @@
                     <a class="nav-link header-link text-black text-uppercase" href="#contact">Контакты</a>
                 </li>
                 <li class="nav-item mr-md-3 header-li">
-                   <a class="btn btn-info btn-l header-lig py-3 px-3 header-button text-uppercase">Связаться с нами</a>
+                   <a href="#contact" class="btn btn-info btn-l header-lig py-3 px-3 header-button text-uppercase">Связаться с нами</a>
                 </li>
 
 

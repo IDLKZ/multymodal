@@ -22,10 +22,11 @@ swiper.on('slideChange', function () {
 });
 var swiper3 = new Swiper('.swiper-container3', {
     loop:true,
-    spaceBetween: 50,
+
     autoplay:true,
     slidesPerView: window.screen.width >900 ? 3 : 1,
     mousewheel: true,
+    centeredSlides: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,

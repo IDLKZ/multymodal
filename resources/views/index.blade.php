@@ -13,9 +13,9 @@
                         <p class="subheading text-uppercase pt-2">
                             Надежный оператор вагонов
                         </p>
-                        <button class="btn blue-btn py-3 px-3">
+                        <a href="#contact" class="btn blue-btn py-3 px-3">
                             ОСТАВИТЬ ЗАЯВКУ
-                        </button>
+                        </a>
                     </div>
         </div>
     </div>
@@ -222,19 +222,19 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <div class="row">
+                                <div class="row justify-content-center">
                                         <img src="/assets/images/logo1.png">
                                 </div>
 
                             </div>
                             <div class="swiper-slide">
-                                <div class="row">
+                                <div class="row justify-content-center">
                                         <img src="/assets/images/logo2.png">
                                 </div>
 
                             </div>
                             <div class="swiper-slide">
-                                <div class="row">
+                                <div class="row justify-content-center">
                                         <img src="/assets/images/logo3.png">
                                 </div>
 
