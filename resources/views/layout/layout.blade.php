@@ -25,7 +25,7 @@
 {{--NavBar section--}}
 <section>
     <div class="col-md-12 text-md-right header text-white py-2">
-       <span class="mr-md-2"><a class="nav-link text-white" href="tel:+7-701-000-00-00">+7-701-000-00-00</a></span>
+       <span class="mr-md-2 ml-auto"><a class="nav-link text-white" href="tel:+7-701-000-00-00">+7-701-000-00-00</a></span>
         <span class="mr-md-4"><a>salem@pmk.kz</a></span>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
