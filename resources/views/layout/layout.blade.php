@@ -36,7 +36,7 @@
 
 {{--NavBar section--}}
 <section>
-    <div class="col-md-12 text-md-right header text-white py-2">
+    <div class="col-md-12 text-md-right header header-nav text-white py-2">
         @if($data["header"]["phone"])
             @foreach($data["header"]["phone"] as $phone)
             <span class="mr-md-2 {{$loop->iteration == 1 ? "ml-auto" : "" }}"><a class="nav-link text-white" href="tel:{{$phone}}">{{$phone}}</a></span>
@@ -117,13 +117,13 @@
     </div>
 </div>
 </section>
-<div>
+
     <a class="btn btn-labeled btn-info float-button1 rounded" href="#contact">
         <span class="btn-label"><i class="fas fa-comment"></i></span>Написать нам</a>
 
     <a class="btn btn-labeled btn-info float-button2 rounded" href="tel:{{isset($data["header"]["phone"][0]) ? $data["header"]["phone"][0]  : "+77172611630" }}">
         <span class="btn-label"><i class="fas fa-phone"></i></span>Позвонить</a>
-</div>
+
 
 
 {{--EndFooter Section--}}
