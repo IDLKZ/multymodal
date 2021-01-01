@@ -215,12 +215,20 @@ textarea{
     background-color: #bbb;
     color: black;
 }
-
+.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
 /* Style the back side */
 .flip-card-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+}
+
+.float-button1{
+    position: fixed; right: -67px!important; bottom: 50%; transform: rotate(-90deg); z-index: 2
+}
+.float-button2{
+    position: fixed; right: -55px!important; bottom: 20%; transform: rotate(-90deg); z-index: 2
 }
 @media screen and (max-width: 320px){
     .header1{

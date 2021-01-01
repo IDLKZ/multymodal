@@ -30,12 +30,6 @@
 
     <title>{{isset($data["seo"]) ? ($data["seo"] ? $data["seo"]->title : "Первая мультимодальная компания") :"Первая мультимодальная компания"}}</title>
 
-    <!-- RedConnect -->
-    <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
-            src="https://web.redhelper.ru/service/main.js?c=test71"></script>
-    <div style="display: none"><a class="rc-copyright"
-                                  href="http://redconnect.ru">Сервис звонка с сайта RedConnect</a></div>
-    <!--/RedConnect -->
 
 </head>
 <body>
@@ -123,6 +117,15 @@
     </div>
 </div>
 </section>
+<div>
+    <a class="btn btn-labeled btn-info float-button1 rounded" href="#contact">
+        <span class="btn-label"><i class="fas fa-comment"></i></span>Написать нам</a>
+
+    <a class="btn btn-labeled btn-info float-button2 rounded" href="tel:{{isset($data["header"]["phone"][0]) ? $data["header"]["phone"][0]  : "+77172611630" }}">
+        <span class="btn-label"><i class="fas fa-phone"></i></span>Позвонить</a>
+</div>
+
+
 {{--EndFooter Section--}}
 
 <!-- Optional JavaScript -->
