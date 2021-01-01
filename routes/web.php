@@ -16,30 +16,36 @@ Route::group(["middleware"=>"admin","prefix"=>"admin"],function (){
 
 Auth::routes(["register"=>false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post("/send-email",[FrontendController::class,"email"]);
+
+Route::group(["middleware"=>"auth"],function (){
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::resource('seos', App\Http\Controllers\SeoController::class);
+    Route::resource('seos', App\Http\Controllers\SeoController::class);
 
-Route::resource('headers', App\Http\Controllers\HeaderController::class);
+    Route::resource('headers', App\Http\Controllers\HeaderController::class);
 
-Route::resource('headings', App\Http\Controllers\HeadingController::class);
+    Route::resource('headings', App\Http\Controllers\HeadingController::class);
 
-Route::resource('parallaxes', App\Http\Controllers\ParallaxController::class);
+    Route::resource('parallaxes', App\Http\Controllers\ParallaxController::class);
 
 
-Route::resource('directions', App\Http\Controllers\DirectionController::class);
+    Route::resource('directions', App\Http\Controllers\DirectionController::class);
 
-Route::resource('managers', App\Http\Controllers\ManagerController::class);
+    Route::resource('managers', App\Http\Controllers\ManagerController::class);
 
-Route::resource('partners', App\Http\Controllers\PartnerController::class);
+    Route::resource('partners', App\Http\Controllers\PartnerController::class);
 
-Route::resource('documents', App\Http\Controllers\DocumentController::class);
+    Route::resource('documents', App\Http\Controllers\DocumentController::class);
 
-Route::resource('addresses', App\Http\Controllers\AddressController::class);
+    Route::resource('addresses', App\Http\Controllers\AddressController::class);
 
-Route::resource('phones', App\Http\Controllers\PhoneController::class);
+    Route::resource('phones', App\Http\Controllers\PhoneController::class);
 
-Route::resource('times', App\Http\Controllers\TimeController::class);
+    Route::resource('times', App\Http\Controllers\TimeController::class);
 
-Route::resource('emails', App\Http\Controllers\EmailController::class);
+    Route::resource('emails', App\Http\Controllers\EmailController::class);
+
+    Route::resource('posts', App\Http\Controllers\PostController::class);
+});

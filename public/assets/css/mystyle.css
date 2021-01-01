@@ -351,4 +351,14 @@ textarea{
     .parallax{
         background-attachment: scroll;
     }
+    .flip-card-back{
+        font-size: 12px;
+    }
+
+
+}
+@media screen and (min-width:900px) {
+    .heading-text{
+        min-height: 100px;
+    }
 }

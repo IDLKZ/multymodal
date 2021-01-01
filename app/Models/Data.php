@@ -21,7 +21,23 @@ class Data extends Model
         $data["headings"][5] = Heading::where("section",5)->first();
         $data["headings"][6] = Heading::where("section",6)->first();
         //null
-        $data["headers"] = Header::all();
+
+        $header = Header::all();
+        $data["header"]["phone"] = null;
+        $data["header"]["email"] = null;
+        if($header->isNotEmpty()){
+            foreach ($header as $item){
+                if($item->phone != null){
+                    $data["header"]["phone"][] = $item->phone;
+                }
+                if($item->email != null){
+                    $data["header"]["email"][] = $item->email;
+                }
+            }
+        }
+
+
+
         //empty:{}
         $data["direction"] = Direction::get();
         $data["managers"] = Manager::get();
@@ -31,8 +47,8 @@ class Data extends Model
         $data["phone"] = Phone::get();
         $data["time"] = Time::get();
         $data["email"] = Email::get();
-
         $data["seo"] = Seo::first();
+
 
 
         return $data;

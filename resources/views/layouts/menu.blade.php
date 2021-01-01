@@ -70,3 +70,9 @@
         <span>Почта</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('posts*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('posts.index') }}">
+        <i class="fas fa-envelope-open-text"></i>
+        <span>Почта</span>
+    </a>
+</li>

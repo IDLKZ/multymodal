@@ -57,7 +57,7 @@ class Heading extends Model
      */
     public static $rules = [
         'title' => 'required|string|max:255',
-        'subtitle' => 'nullable|string|max:255',
+        'subtitle' => 'nullable|string|max:500',
         'section' => 'required|string|max:255',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'

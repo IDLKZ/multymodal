@@ -7,7 +7,7 @@
 <!-- Subtitle Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('subtitle', 'Подзаголовок:') !!}
-    {!! Form::text('subtitle', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+    {!! Form::text('subtitle', null, ['class' => 'form-control','maxlength' => 500,'maxlength' => 500]) !!}
 </div>
 
 <!-- Section Field -->

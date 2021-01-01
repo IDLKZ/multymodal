@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{isset($data["seo"]) ? ($data["seo"] ? $data["seo"]->description : "Первая мультимодальная компания") :"Первая мультимодальная компания"}}">
     <meta name="keywords" content="{{isset($data["seo"]) ? ($data["seo"] ? $data["seo"]->keywords : "Первая мультимодальная компания") :"Первая мультимодальная компания"}}">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href={{asset("/assets/css/bootstrap.min.css")}}>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -19,14 +19,29 @@
 
     <title>{{isset($data["seo"]) ? ($data["seo"] ? $data["seo"]->title : "Первая мультимодальная компания") :"Первая мультимодальная компания"}}</title>
 
+    <!-- RedConnect -->
+    <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
+            src="https://web.redhelper.ru/service/main.js?c=test71"></script>
+    <div style="display: none"><a class="rc-copyright"
+                                  href="http://redconnect.ru">Сервис звонка с сайта RedConnect</a></div>
+    <!--/RedConnect -->
 
 </head>
 <body>
+
 {{--NavBar section--}}
 <section>
     <div class="col-md-12 text-md-right header text-white py-2">
-       <span class="mr-md-2 ml-auto"><a class="nav-link text-white" href="tel:+7-701-000-00-00">+7-701-000-00-00</a></span>
-        <span class="mr-md-4"><a>salem@pmk.kz</a></span>
+        @if($data["header"]["phone"])
+            @foreach($data["header"]["phone"] as $phone)
+            <span class="mr-md-2 ml-auto"><a class="nav-link text-white" href="tel:{{$phone}}">{{$phone}}</a></span>
+            @endforeach
+        @endif
+            @if($data["header"]["email"])
+                @foreach($data["header"]["email"] as $email)
+                    <span class="mr-md-2">{{$email}}</span>
+                @endforeach
+            @endif
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
         <a class="navbar-brand" href="/">
@@ -107,6 +122,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="{{asset("/assets/js/my_script.js")}}"></script>
+@stack("scripts")
 
 </body>
 </html>

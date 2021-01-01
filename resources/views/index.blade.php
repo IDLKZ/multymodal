@@ -57,17 +57,19 @@
               <hr>
               @if($data["direction"]->isNotEmpty())
                   @foreach($data["direction"] as $direction)
-                      <div class="col-md-6 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
+                      <div class="col-md-4 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2 ">
+                          <div class="heading-text">
                           <p class="heading4 text-uppercase">
                               {{$direction->title}}
                           </p>
+                          </div>
                           <div class="flip-card">
 
                               <div class="flip-card-inner">
                                   <div class="flip-card-front bg" style="background-image:url({{$direction->img}})">
                                   </div>
-                                  <div class="flip-card-back">
-                                      <p>{{$direction->description}}</p>
+                                  <div class="flip-card-back pa-2 overflow-y-scroll">
+                                      {!! $direction->description !!}
                                   </div>
                               </div>
                           </div>
@@ -76,7 +78,7 @@
                   @endforeach
 
               @else
-                  <div class="col-md-6 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
+                  <div class="col-md-4 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
                       <p class="heading4 text-uppercase">
                           Экспедирование
                       </p>
@@ -91,7 +93,22 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
+                  <div class="col-md-4 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
+                      <p class="heading4 text-uppercase">
+                          Экспедирование
+                      </p>
+                      <div class="flip-card">
+
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front" style="background-image:url('assets/images/img1.png')">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>SOME TEXT</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 text-center my-sm-5 pa-sm-2 my-md-5 pa-md-5 my-2">
                       <p class="heading4 text-uppercase">
                           Экспедирование
                       </p>
@@ -110,11 +127,11 @@
 
               @endif
               <div class="col-md-12 text-center text-black mt-2">
-                  <p class="subheading2 text-uppercase pt-2 pb-5">
-                      Вся наша продукция отличается высочайшим качеством и соответствует самым строгим отраслевым стандартам
-                      безопасности. Просмотрите наш полный каталог, чтобы узнать обо всех наших продуктах, а также о наших
-                      дополнительных услугах.
-                  </p>
+{{--                  <p class="subheading2 text-uppercase pt-2 pb-5">--}}
+{{--                      Вся наша продукция отличается высочайшим качеством и соответствует самым строгим отраслевым стандартам--}}
+{{--                      безопасности. Просмотрите наш полный каталог, чтобы узнать обо всех наших продуктах, а также о наших--}}
+{{--                      дополнительных услугах.--}}
+{{--                  </p>--}}
               </div>
           </div>
 
@@ -490,41 +507,41 @@
                     <div class=" col-md-6">
                         <div class="form-group">
                             <label for="formGroupSurnameInput" class="text-white text-uppercase">Фамилия</label>
-                            <input type="text" class="form-control our-input" placeholder="Фамилия">
+                            <input required id="surname" type="text" class="form-control our-input" placeholder="Фамилия">
                         </div>
                     </div>
                     <div class=" col-md-6">
                         <div class="form-group">
                             <label for="formGroupNameInput" class="text-white text-uppercase">Имя</label>
-                            <input type="text" class="form-control our-input" placeholder="Имя">
+                            <input required id="name" type="text" class="form-control our-input" placeholder="Имя">
                         </div>
                     </div>
                     <div class=" col-md-6">
                         <div class="form-group">
                             <label for="formGroupNameInput" class="text-white text-uppercase">Телефон</label>
-                            <input type="text" class="form-control our-input" placeholder="Телефон">
+                            <input required id="phone" type="text" class="form-control our-input" placeholder="Телефон">
                         </div>
                     </div>
                     <div class=" col-md-6">
                         <div class="form-group">
                             <label for="formGroupNameInput" class="text-white text-uppercase">Email</label>
-                            <input type="email" class="form-control our-input" placeholder="Email">
+                            <input required type="email" id="email" class="form-control our-input" placeholder="Email">
                         </div>
                     </div>
                     <div class="col-md-12">
                         <label for="formGroupNameInput" class="text-white text-uppercase">Текст сообщения</label>
-                        <textarea class="w-100" rows="10"></textarea>
+                        <textarea id="message" name="messages" class="w-100" rows="10"></textarea>
                     </div>
                     <div class="col-md-6">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label text-white" for="defaultCheck1">
+                            <input required class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label text-white" name="agree" for="defaultCheck1">
                                 Я принимаю условия конфиденциальности
                             </label>
                         </div>
                     </div>
                     <div class="col-md-6 text-right">
-                        <button class="btn contact-button text-uppercase">Отправить Письмо</button>
+                        <button id="mybutton" class="btn contact-button text-uppercase">Отправить Письмо</button>
                     </div>
                 </div>
             </form>
@@ -587,4 +604,8 @@
 
     </section>
 
+    @push("scripts")
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+        <script src="{{asset("/assets/js/script.js")}}"></script>
+    @endpush
 @endsection()
