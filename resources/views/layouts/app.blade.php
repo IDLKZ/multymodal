@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{config('app.name')}}</title>
+    <title>Панель управления ТОО «Первая Мультимодальная Компания» </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 4.1.1 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
@@ -28,10 +28,10 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
-        <img class="navbar-brand-full" src="{{asset("/assets/images/logo.png")}}" width="30" height="30"
+        <img class="navbar-brand-full" src="{{asset("/assets/images/logo.png")}}" width="120" height="60"
              alt="InfyOm Logo">
-        <img class="navbar-brand-minimized" src="{{asset("/assets/images/logo.png")}}" width="30"
-             height="30" alt="InfyOm Logo">
+        <img class="navbar-brand-minimized" src="{{asset("/assets/images/logo.png")}}" width="120"
+             height="60" alt="InfyOm Logo">
     </a>
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
         <span class="navbar-toggler-icon"></span>
