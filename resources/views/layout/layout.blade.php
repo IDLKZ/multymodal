@@ -118,10 +118,10 @@
 </div>
 </section>
 
-    <a class="btn btn-labeled btn-info float-button1 rounded" href="#contact">
+    <a class="btn btn-labeled btn-info float-button1 rounded btn-sm" href="#contact">
         <span class="btn-label"><i class="fas fa-comment"></i></span>Написать нам</a>
 
-    <a class="btn btn-labeled btn-info float-button2 rounded" href="tel:{{isset($data["header"]["phone"][0]) ? $data["header"]["phone"][0]  : "+77172611630" }}">
+    <a class="btn btn-labeled btn-info float-button2 rounded btn-sm" href="tel:{{isset($data["header"]["phone"][0]) ? $data["header"]["phone"][0]  : "+77172611630" }}">
         <span class="btn-label"><i class="fas fa-phone"></i></span>Позвонить</a>
 
 
