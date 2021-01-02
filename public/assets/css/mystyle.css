@@ -257,7 +257,7 @@ textarea{
     }
 
 }
-@media screen and (min-width:320px) and (max-width: 460px){
+@media screen and (min-width:300px) and (max-width: 460px){
     .header-nav{
         font-size: 12px;
     }
@@ -272,7 +272,7 @@ textarea{
         height: 60px;
     }
     .subheading{
-        font-size: 14px;
+        font-size: 12px;
     }
     .subheading2{
         font-size: 12px;
