@@ -89,12 +89,15 @@
 <section class="footer">
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <a class="navbar-brand" href="/">
                 <img src="{{asset("/assets/images/footer-logo.png")}}" width="230" height="70">
             </a>
         </div>
-        <div class="col-md-8 d-flex">
+        <div class="col-md-2 text-center">
+            <h5>Логистические решения ваших задач</h5>
+        </div>
+        <div class="col-md-7 d-flex">
             <ul class="navbar-nav mr-auto m-auto list-group-horizontal footer-ul">
                 <li class="nav-item mr-md-4 header-li">
                     <a class="nav-link header-link text-white text-uppercase" href="#company">О компании</a>
