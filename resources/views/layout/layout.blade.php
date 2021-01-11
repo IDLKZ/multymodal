@@ -39,7 +39,7 @@
     <div class="col-md-12 text-md-right header header-nav text-white py-2">
         @if($data["header"]["phone"])
             @foreach($data["header"]["phone"] as $phone)
-            <span class="mr-md-2 {{$loop->iteration == 1 ? "ml-auto" : "" }}"><a class="nav-link text-white" href="tel:{{$phone}}">{{$phone}}</a></span>
+            <span class="mr-md-2 {{$loop->iteration == 1 ? "ml-auto" : "" }}"><a class="nav-link text-white head-link" href="tel:{{$phone}}">{{$phone}}</a></span>
             @endforeach
         @endif
             @if($data["header"]["email"])
