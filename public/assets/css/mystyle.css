@@ -255,6 +255,9 @@ textarea{
     .footer-ul{
         flex-direction: column!important;
     }
+    .head-link{
+    font-size:10px;
+    }
 
 }
 @media screen and (min-width:300px) and (max-width: 460px){
@@ -299,6 +302,9 @@ textarea{
     .footer-ul{
         flex-direction: column!important;
     }
+    .head-link{
+    font-size:10px;
+    }
 }
 @media screen and (min-width: 460px) and (max-width: 680px){
     .header-nav{
@@ -331,6 +337,9 @@ textarea{
     }
     .footer-ul{
         flex-direction: column!important;
+    }
+     .head-link{
+    font-size:10px;
     }
 }
 @media screen and (min-width: 680px) and (max-width: 900px){
@@ -381,6 +390,9 @@ textarea{
     }
     .float-button2{
         bottom: 35%;
+    }
+    .head-link{
+    padding:2px;
     }
 
 
